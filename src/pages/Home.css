@@ -25,7 +25,8 @@ h2, body {
 
 /* ── Hero ── */
 .hero-section {
-  margin-bottom: 72px;
+  margin-bottom: 190px;
+  margin-top: 50px;
 }
 
 .hero-inner {

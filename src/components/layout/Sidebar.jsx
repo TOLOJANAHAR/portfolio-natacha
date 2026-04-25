@@ -48,7 +48,7 @@ export default function Sidebar({ activePage, setActivePage }) {
         </div>
 
         <div className="sidebar-bottom">
-          {/* 🔥 Theme toggle */}
+          {/* Theme toggle */}
           <button
             className="sidebar-btn theme-toggle"
             onClick={toggleTheme}

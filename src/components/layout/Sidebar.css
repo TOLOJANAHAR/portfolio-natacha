@@ -5,13 +5,16 @@
   bottom: 0;
   width: var(--sidebar-width);
   background: var(--bg-primary);
-  border-right: 1px solid var(--border);
+  /* border-right: 1px solid var(--border); */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding: 20px 0;
+  padding-top: 150px;
+  margin-left: 25px;
   z-index: 90;
+  /* border: 1px solid red; */
 }
 
 .sidebar-nav {
@@ -19,6 +22,7 @@
   flex-direction: column;
   align-items: center;
   gap: 8px;
+
 }
 
 .sidebar-bottom {
