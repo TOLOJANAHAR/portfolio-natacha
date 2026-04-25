@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&display=swap');
+
+.projects-page {
+  padding: 40px 48px;
+  max-width: 900px;
+  animation: fadeInUp 0.4s ease both;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.projects-header {
+  margin-bottom: 28px;
+}
+
+/* Reuse section-title-row / section-title / section-subtitle from globals via Home.css-like pattern */
+.section-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.section-icon {
+  color: var(--accent);
+}
+
+.section-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.3px;
+}
+
+.section-subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Filter tabs */
+.projects-filters {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+  border-top: 1px dashed;
+  color: var(--accent-dim);
+  padding-top: 20px ;
+}
+
+.filter-btn {
+  padding: 6px 14px;
+  border-radius: 99px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 12.5px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition);
+  letter-spacing: 0.2px;
+}
+
+.filter-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--border-light);
+}
+
+.filter-btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #0e0e0e;
+  font-weight: 600;
+}
+
+/* Projects list */
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 48px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .projects-page {
+    padding: 28px 16px;
+    max-width: 100%;
+  }
+}

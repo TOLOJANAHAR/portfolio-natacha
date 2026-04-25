@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-primary: #0e0e0e;
+  --bg-secondary: #161616;
+  --bg-card: #1a1a1a;
+  --bg-elevated: #222222;
+  --border: #2a2a2a;
+  --border-light: #333333;
+  --text-primary: #f0f0f0;
+  --text-secondary: #888888;
+  --text-muted: #555555;
+  --accent: #ffffff;
+  --accent-dim: rgba(255, 255, 255, 0.08);
+  --accent-glow: rgba(255, 255, 255, 0.2);
+  --white: #ffffff;
+  --sidebar-width: 64px;
+  --navbar-height: 64px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f5f5;
+  --bg-card: #fafafa;
+  --bg-elevated: #ffffff;
+
+  --border: #e5e5e5;
+  --border-light: #dcdcdc;
+
+  --text-primary: #111111;
+  --text-secondary: #555555;
+  --text-muted: #888888;
+
+  --accent: #000000;
+  --accent-dim: rgba(0, 0, 0, 0.05);
+  --accent-glow: rgba(0, 0, 0, 0.1);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: var(--border-light); border-radius: 4px; }
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-body {
+  display: flex;
+  flex: 1;
+  padding-top: var(--navbar-height);
+}
+
+.main-content {
+  flex: 1;
+  margin-left: var(--sidebar-width);
+  min-height: calc(100vh - var(--navbar-height));
+  overflow-y: auto;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  :root {
+    --sidebar-width: 0px;
+    --navbar-height: 56px;
+  }
+  .main-content {
+    margin-left: 0;
+    margin-bottom: 64px; /* bottom nav on mobile */
+  }
+}
