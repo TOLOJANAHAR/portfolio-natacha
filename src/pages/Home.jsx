@@ -1,4 +1,4 @@
-import { Zap, Palette, LayoutGrid, Layers, Briefcase, Rocket, ArrowUpRight } from "lucide-react";
+import { Zap, Palette, LayoutGrid, Layers, Briefcase, Rocket, ArrowUpRight, MessageSquareQuote } from "lucide-react";
 import SocialLinks from "../components/ui/SocialLinks";
 import ServiceCard from "../components/ui/ServiceCard";
 import ExperienceTimeline from "../components/ui/ExperienceTimeline";
@@ -6,6 +6,9 @@ import ProjectCard from "../components/ui/ProjectCard";
 import { FEATURED_PROJECTS } from "../data/projects";
 import "./Home.css";
 import profileImg from "../assets/natacha.png"
+import { TESTIMONIALS_ROW1, TESTIMONIALS_ROW2 } from "../data/testimonials";
+import TestimonialsMarquee from "../components/ui/TestimonialsMarquee";
+import Footer from "../components/layout/Footer";
 
 const EXPERIENCES = [
   {
@@ -169,6 +172,24 @@ export default function Home({ setActivePage }) {
 
         <ExperienceTimeline items={EXPERIENCES} />
       </section>
+
+
+      {/* ── Testimonials ── */}
+      <section id="testimonials" className="testimonials-section">
+        <div className="section-header testimonials-header">
+          <div className="section-title-row">
+            <MessageSquareQuote size={20} strokeWidth={2} className="section-icon" />
+            <h2 className="section-title">Words From Happy Clients</h2>
+          </div>
+          <p className="section-subtitle">
+            Discover what satisfied clients have to say about their experiences working with me.
+          </p>
+        </div>
+ 
+        <TestimonialsMarquee row1={TESTIMONIALS_ROW1} row2={TESTIMONIALS_ROW2} />
+      </section>
+ 
+      <Footer />
     </div>
   );
 }

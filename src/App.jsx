@@ -15,8 +15,8 @@ export default function App() {
   const renderPage = () => {
     switch (activePage) {
       case "home": return <Home setActivePage={setActivePage} />;
-      case "projects": return <Projects />;
-      case "contact": return <Contact />;
+      case "projects": return <Projects setActivePage={setActivePage} />;
+      case "contact": return <Contact setActivePage={setActivePage} />;
       default: return <Home />;
     }
   };
