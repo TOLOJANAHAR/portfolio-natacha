@@ -1,77 +1,105 @@
 // Shared project data — used in both Home showcase and Projects page
 
 import transverseImg from "../assets/transverse.png";
-import cupidon from "../assets/cupidon.png";
-import hype from "../assets/hype.jpg";
+import unicef from "../assets/unicef.png";
+import hype from "../assets/hype.png";
+import wpa from "../assets/wpa.png";
+import dolibot from "../assets/dolibot.png";
+import ssg from "../assets/ssg.png";
+import flux from "../assets/flux.png"
+import cnr from "../assets/cnr.png"
+
 export const PROJECTS = [
   {
     id: 1,
-    title: "Devcraft",
-    url: "devcraft.com",
-    tags: ["Portfolio", "4 Pages", "Dark Theme"],
+    title: "HealthShield",
+    url: "-",
+    tags: ["Plateform", "15 Pages", "Light Theme"],
     description:
-      "Showcasing expertise, passion, and innovation in the realm of development.",
-    image: transverseImg,
+      "A real-time health intelligence platform that detects, predicts, and responds to public health risks across Madagascar using AI, and field data.",
+    image: unicef,
     accent: "#6c63ff",
-    category: "Portfolio",
+    category: "Plateform",
   },
   {
     id: 2,
-    title: "Zenith Gym",
-    url: "zenith.com",
-    tags: ["Fitness", "5 Pages", "Light Theme"],
+    title: "World Psychiatry Association",
+    url: "wpanet.org",
+    tags: ["E-learning", "50 Pages", "Light Theme"],
     description:
-      "Empowering fitness enthusiasts with an immersive online experience.",
-    image: cupidon,
+      "The World Psychiatric Association (WPA) is a global, nongovernmental organization (NGO) representing psychiatric societies in 123 countries. It promotes international collaboration, sets ethical standards, and works with the World Health Organization (WHO) to improve mental health care, education, and research",
+    image: wpa,
     accent: "#a78bfa",
-    category: "Landing Page",
+    category: "Plateform",
   },
   {
     id: 3,
-    title: "Bloom Finance",
-    url: "bloomfinance.io",
+    title: "Hype Software POS",
+    url: "hype-software.com",
     tags: ["Finance", "6 Pages", "Dark Theme"],
     description:
-      "A modern fintech dashboard simplifying personal and business financial management.",
+      "A POS (Point of Sale) application is a software system that enables businesses to manage sales, process payments, and track transactions in real time.",
     image: hype,
     accent: "#34d399",
-    category: "Dashboard",
+    category: "Plateform",
   },
   {
     id: 4,
-    title: "Orbit Travel",
-    url: "orbittravel.app",
-    tags: ["Travel", "8 Pages", "Light Theme"],
+    title: "SSG SWISS",
+    url: "-",
+    tags: ["Travel", "20 Pages", "Light Theme"],
     description:
-      "Crafting seamless travel planning journeys with intuitive UX and stunning visuals.",
-    image: null,
+      "SSG Swiss is a premium Swiss railway company offering a unique travel experience combining comfort, gastronomy and eco-responsibility.",
+    image: ssg,
     accent: "#f59e0b",
-    category: "Mobile App",
+    category: "Plateform",
   },
   {
     id: 5,
-    title: "MindSpace",
-    url: "mindspace.co",
-    tags: ["Health", "4 Pages", "Minimal"],
+    title: "Transverse",
+    url: "-",
+    tags: ["Game", "14 Pages", "Minimal"],
     description:
-      "A mindfulness and meditation app UI promoting mental wellbeing through calm design.",
-    image: null,
+      "Transverse is a plateform of thematic study method that traverses the biblical corpus to connect verses, themes, or symbols through games,",
+    image: transverseImg,
     accent: "#818cf8",
-    category: "Mobile App",
+    category: "Plateform",
   },
   {
     id: 6,
-    title: "NovaSaaS",
-    url: "novasaas.dev",
-    tags: ["SaaS", "10 Pages", "Dark Theme"],
+    title: "Flux",
+    url: "flugroup.ch",
+    tags: ["SaaS", "4 Pages", "Light Theme"],
     description:
-      "Complete SaaS product design from onboarding flows to complex analytics dashboards.",
-    image: null,
+      "A platform offering IT consulting, web development, telecommunications services, and renewable energy solutions.",
+    image: flux,
     accent: "#f43f5e",
-    category: "Dashboard",
+    category: "Landing Page",
+  },
+  {
+    id: 6,
+    title: "Dolibot",
+    url: "-",
+    tags: ["SaaS", "10 Pages", "Dark/Light Theme"],
+    description:
+      "chatbot for marketing decision support.",
+    image: dolibot,
+    accent: "#f43f5e",
+    category: "Plateform",
+  },
+  {
+    id: 6,
+    title: "CNR",
+    url: "-",
+    tags: ["SaaS", "4 Pages", "Light Theme"],
+    description:
+      "The CNR is a technical body whose primary mission is to observe the operating methods of road transport markets.",
+    image: cnr,
+    accent: "#f43f5e",
+    category: "Landing Page",
   },
 ];
 
 export const FEATURED_PROJECTS = PROJECTS.slice(0, 2);
 
-export const PROJECT_CATEGORIES = ["Tous", "Portfolio", "Landing Page", "Dashboard", "Mobile App"];
+export const PROJECT_CATEGORIES = ["Tous", "Plateform", "Landing Page", "Dashboard"];

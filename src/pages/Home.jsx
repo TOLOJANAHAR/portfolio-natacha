@@ -9,34 +9,40 @@ import profileImg from "../assets/natacha.png"
 import { TESTIMONIALS_ROW1, TESTIMONIALS_ROW2 } from "../data/testimonials";
 import TestimonialsMarquee from "../components/ui/TestimonialsMarquee";
 import Footer from "../components/layout/Footer";
+import wpalogo from "../assets/wpa-logo.png";
+import fluxlogo from "../assets/Flux-logo.png";
+import hypelogo from "../assets/Hype-logo.png";
 
 const EXPERIENCES = [
   {
-    company: "Vortex",
+    logo:hypelogo,
+    company: "Hype SWISS",
     type: "Tech Firm",
-    url: "vortex.co",
-    period: "2023 - Present",
+    url: "hype.swiss",
+    period: "12/2025 - 02/2026",
     role: "Product Designer",
     description:
-      "Headed product design initiatives, defined design strategy, and ensured alignment with business objectives for market-leading products.",
+      "A telecom company, where i cretes a POS design Plateform to enables businesses to manage sales, process payments, and track transactions in real time.",
   },
   {
-    company: "PixelWorks",
-    type: "Design Studio",
-    url: "pixelworks.io",
-    period: "2022 - 2023",
-    role: "Senior UI/UX Designer",
-    description:
-      "Provided leadership in UI/UX design, mentored junior designers, and collaborated with cross-functional teams for product excellence.",
-  },
-  {
-    company: "Athon",
-    type: "Tech Start-up",
-    url: "athon.com",
-    period: "2020 - 2022",
+    logo:fluxlogo,
+    company: "FLUX GROUP SARL",
+    type: "Designer",
+    url: "fluxgroup.ch",
+    period: "06/2025 - 11/2025",
     role: "UI/UX Designer",
     description:
-      "Led UI/UX design projects from concept to delivery, conducted user testing, and iterated designs for optimal user experience.",
+      "A platform offering IT consulting, web development, telecommunications services, and renewable energy solutions.",
+  },
+  {
+    logo:wpalogo,
+    company: "World Psychiatry Association",
+    type: "Tech Start-up",
+    url: "wpanet.org",
+    period: "06/2024 - 12/2024",
+    role: "UI/UX Designer",
+    description:
+      "The World Psychiatric Association (WPA) is a global, nongovernmental organization (NGO) representing psychiatric societies in 123 countries. It promotes international collaboration, sets ethical standards, and works with the World Health Organization (WHO) to improve mental health care, education, and research.",
   },
 ];
 
@@ -92,7 +98,7 @@ export default function Home({ setActivePage }) {
           {/* Text */}
           <div className="hero-text">
             <p className="hero-greeting">
-              <span className="greeting-wave">✋</span> Hello I am
+              <span className="greeting-wave">👋</span> Hello I am
             </p>
             <h1 className="hero-name">
               Natacha TOLOJANAHARY
