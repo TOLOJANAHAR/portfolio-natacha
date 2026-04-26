@@ -124,10 +124,10 @@ export default function BentoServices() {
         <div className="bento-accent-body">
           <p className="bento-badge-label">
             <span className="bento-badge-dot" />
-            Explore what's included
+            Explore what i offer
           </p>
           <h3 className="bento-accent-h3">Maximum<br/>creativity</h3>
-          <p className="bento-accent-p">Engage audience with your unique style.</p>
+          <p className="bento-accent-p">Engage audience with unique style.</p>
         </div>
       </div>
 
@@ -169,8 +169,8 @@ export default function BentoServices() {
         </div>
         <div className="bento-foot">
           <div>
-            <p className="bento-foot-title">Invite people</p>
-            <p className="bento-foot-sub">Collaborate in real‑time</p>
+            <p className="bento-foot-title">Collaboration in real-time</p>
+            {/* <p className="bento-foot-sub">Collaborate in real‑time</p> */}
           </div>
         </div>
       </div>
@@ -200,7 +200,7 @@ export default function BentoServices() {
         </div>
         <div className="bento-foot">
           <div>
-            <p className="bento-foot-title">Track progress</p>
+            <p className="bento-foot-title">You can track progress</p>
             <p className="bento-foot-sub">Blazing fast delivery timing, no fuzz.</p>
           </div>
         </div>

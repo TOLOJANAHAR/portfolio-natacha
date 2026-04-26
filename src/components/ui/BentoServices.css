@@ -285,8 +285,8 @@
 .bento-bar--short {
   background: linear-gradient(
     to top,
-    rgba(163,230,53,0.25),
-    rgba(163,230,53,0.6)
+    rgba(157, 157, 157, 0.25),
+    rgba(121, 121, 121, 0.6)
   );
   filter: blur(0.2px);
 }
@@ -295,9 +295,9 @@
 .bento-bar--tall {
   background: linear-gradient(
     to top,
-    #a3e635 0%,
-    #4ade80 40%,
-    #22d3ee 100%
+    #242424 0%,
+    #4a4d4b 40%,
+    #9c9fa0 100%
   );
 }
 
