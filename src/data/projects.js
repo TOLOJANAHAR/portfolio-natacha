@@ -8,6 +8,7 @@ import dolibot from "../assets/dolibot.png";
 import ssg from "../assets/ssg.png";
 import flux from "../assets/flux.png"
 import cnr from "../assets/cnr.png"
+import hailalana from "../assets/aj.png"
 
 export const PROJECTS = [
   {
@@ -56,6 +57,17 @@ export const PROJECTS = [
   },
   {
     id: 5,
+    title: "Hailalana",
+    url: "hailalana.agvm.mg",
+    tags: ["Plateform", "14 Pages", "Minimal"],
+    description:
+      "Hailalana is a legal assistance platform. A tool designed to support you daily in all your legal matters, with innovative tools.",
+    image: hailalana,
+    accent: "#818cf8",
+    category: "Plateform",
+  },
+  {
+    id: 6,
     title: "Transverse",
     url: "-",
     tags: ["Game", "14 Pages", "Minimal"],
@@ -66,10 +78,10 @@ export const PROJECTS = [
     category: "Plateform",
   },
   {
-    id: 6,
+    id: 7,
     title: "Flux",
     url: "flugroup.ch",
-    tags: ["SaaS", "4 Pages", "Light Theme"],
+    tags: ["Platform", "4 Pages", "Light Theme"],
     description:
       "A platform offering IT consulting, web development, telecommunications services, and renewable energy solutions.",
     image: flux,
@@ -77,10 +89,10 @@ export const PROJECTS = [
     category: "Landing Page",
   },
   {
-    id: 6,
+    id: 8,
     title: "Dolibot",
     url: "-",
-    tags: ["SaaS", "10 Pages", "Dark/Light Theme"],
+    tags: ["ChatBot", "10 Pages", "Dark/Light Theme"],
     description:
       "chatbot for marketing decision support.",
     image: dolibot,
@@ -88,10 +100,10 @@ export const PROJECTS = [
     category: "Plateform",
   },
   {
-    id: 6,
+    id: 9,
     title: "CNR",
     url: "-",
-    tags: ["SaaS", "4 Pages", "Light Theme"],
+    tags: ["Plateform", "4 Pages", "Light Theme"],
     description:
       "The CNR is a technical body whose primary mission is to observe the operating methods of road transport markets.",
     image: cnr,

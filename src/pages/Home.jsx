@@ -1,6 +1,7 @@
-import { Zap, Palette, LayoutGrid, Layers, Briefcase, Rocket, ArrowUpRight, MessageSquareQuote } from "lucide-react";
+import { Zap, Palette, LayoutGrid, Layers, Briefcase, Rocket, ArrowUpRight, Wrench, MessageSquareQuote } from "lucide-react";
 import SocialLinks from "../components/ui/SocialLinks";
 import ServiceCard from "../components/ui/ServiceCard";
+import BentoServices from "../components/ui/BentoServices";
 import ExperienceTimeline from "../components/ui/ExperienceTimeline";
 import ProjectCard from "../components/ui/ProjectCard";
 import { FEATURED_PROJECTS } from "../data/projects";
@@ -12,6 +13,7 @@ import Footer from "../components/layout/Footer";
 import wpalogo from "../assets/wpa-logo.png";
 import fluxlogo from "../assets/Flux-logo.png";
 import hypelogo from "../assets/Hype-logo.png";
+
 
 const EXPERIENCES = [
   {
@@ -116,7 +118,7 @@ export default function Home({ setActivePage }) {
         </div>
       </section>
 
-      {/* ── Services Section ── */}
+      {/* ── Services Section ──
       <section id="services" className="services-section">
         <div className="section-header">
           <div className="section-title-row">
@@ -133,9 +135,21 @@ export default function Home({ setActivePage }) {
             <ServiceCard key={service.title} {...service} />
           ))}
         </div>
+      </section> */}
+
+      {/* ── Bento Services + Tools ── */}
+      <section id="services" className="bento-section">
+        <div className="section-header">
+          <div className="section-title-row">
+            <Zap size={20} strokeWidth={2} className="section-icon" />
+            <h2 className="section-title">Inspiring benefits awaits you</h2>
+          </div>
+          <p className="section-subtitle">
+            Explore everything included — from creative strategy to seamless integrations.
+          </p>
+        </div>
+        <BentoServices />
       </section>
-
-
 
       {/* ── Creative Showcase ── */}
       <section id="showcase" className="showcase-section">
@@ -195,6 +209,8 @@ export default function Home({ setActivePage }) {
         <TestimonialsMarquee row1={TESTIMONIALS_ROW1} row2={TESTIMONIALS_ROW2} />
       </section>
  
+
+      
       <Footer />
     </div>
   );
