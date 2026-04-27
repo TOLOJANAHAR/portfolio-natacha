@@ -170,7 +170,6 @@ export default function BentoServices() {
         <div className="bento-foot">
           <div>
             <p className="bento-foot-title">Collaboration in real-time</p>
-            {/* <p className="bento-foot-sub">Collaborate in real‑time</p> */}
           </div>
         </div>
       </div>
@@ -216,35 +215,35 @@ export default function BentoServices() {
             ))}
           </svg>
           {/* Curve */}
-<svg className="bento-curve-svg" viewBox="0 0 280 110" preserveAspectRatio="none">
-  <defs>
-    <linearGradient id="cg" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stopColor="#cccccb" stopOpacity="0.05"/>
-      <stop offset="50%" stopColor="#cccccb" stopOpacity="0.6"/>
-      <stop offset="100%" stopColor="#cccccb" stopOpacity="1"/>
-    </linearGradient>
-  </defs>
+          <svg className="bento-curve-svg" viewBox="0 0 280 110" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="cg" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stopColor="#cccccb" stopOpacity="0.05"/>
+                <stop offset="50%" stopColor="#cccccb" stopOpacity="0.6"/>
+                <stop offset="100%" stopColor="#cccccb" stopOpacity="1"/>
+              </linearGradient>
+            </defs>
 
-  <path
-    d="
-      M0 105
-      C25 95, 55 92, 80 94
-      S90 50, 100 40
-      S115 140, 120 90
-      S155 70, 165 50
-      S175 35, 190 28
-      S210 50, 290 -5
-    "
-    stroke="url(#cg)"
-    strokeWidth="3"
-    fill="none"
-    strokeLinecap="round"
-  />
+            <path
+              d="
+                M0 105
+                C25 95, 55 92, 80 94
+                S90 50, 100 40
+                S115 140, 120 90
+                S155 70, 165 50
+                S175 35, 190 28
+                S210 50, 290 -5
+              "
+              stroke="url(#cg)"
+              strokeWidth="3"
+              fill="none"
+              strokeLinecap="round"
+            />
 
-  <circle cx="185" cy="28" r="5" fill="#cccccb"/>
-  <circle cx="185" cy="28" r="14" fill="#cccccb" opacity="0.2"/>
-  <circle cx="185" cy="28" r="22" fill="#cccccb" opacity="0.08"/>
-</svg>
+            <circle cx="192" cy="28" r="5" fill="#cccccb"/>
+            <circle cx="192" cy="28" r="12" fill="#cccccb" opacity="0.2"/>
+            <circle cx="192" cy="28" r="20" fill="#cccccb" opacity="0.08"/>
+          </svg>
         </div>
         <div className="bento-foot">
           {/* <div className="bento-foot-icon bento-foot-icon--green"><Repeat2 size={14} strokeWidth={2}/></div> */}
