@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Mail, CalendarClock, ArrowRight, HelpCircle, Plus, Minus } from "lucide-react";
 import Footer from "../components/layout/Footer";
 import "./Contact.css";
+import emailjs from "emailjs-com";
 
 const SOCIALS = [
   {
@@ -78,13 +79,29 @@ export default function Contact() {
   const [sent, setSent] = useState(false);
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
-
   const handleSubmit = (e) => {
     e.preventDefault();
+
     if (!form.name || !form.email || !form.message) return;
-    setSent(true);
-    setTimeout(() => setSent(false), 4000);
-    setForm({ name: "", email: "", message: "" });
+
+    emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      {
+        from_name: form.name,
+        from_email: form.email,
+        message: form.message,
+      },
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
+    .then(() => {
+      setSent(true);
+      setTimeout(() => setSent(false), 4000);
+      setForm({ name: "", email: "", message: "" });
+    })
+    .catch((error) => {
+      console.error("Email error:", error);
+    });
   };
 
   return (
