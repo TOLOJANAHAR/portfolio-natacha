@@ -194,7 +194,7 @@ export default function Home({ setActivePage }) {
       </section>
 
 
-      {/* ── Testimonials ──
+      {/* ── Testimonials ── */}
       <section id="testimonials" className="testimonials-section">
         <div className="section-header testimonials-header">
           <div className="section-title-row">
@@ -204,10 +204,10 @@ export default function Home({ setActivePage }) {
           <p className="section-subtitle">
             Discover what satisfied clients have to say about their experiences working with me.
           </p>
-        </div> */}
+        </div>
  
-        {/* <TestimonialsMarquee row1={TESTIMONIALS_ROW1} row2={TESTIMONIALS_ROW2} /> */}
-      {/* </section> */}
+        <TestimonialsMarquee row1={TESTIMONIALS_ROW1} row2={TESTIMONIALS_ROW2} />
+      </section>
  
 
       
