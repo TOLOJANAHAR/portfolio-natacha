@@ -21,7 +21,7 @@ const EXPERIENCES = [
     company: "Hype SWISS",
     type: "Tech Firm",
     url: "hype.swiss",
-    period: "12/2025 - 02/2026",
+    period: "Déc 2025 - Juil 2026",
     role: "Product Designer",
     description:
       "A telecom company, where i cretes a POS design Plateform to enables businesses to manage sales, process payments, and track transactions in real time.",
@@ -31,7 +31,7 @@ const EXPERIENCES = [
     company: "FLUX GROUP SARL",
     type: "Designer",
     url: "fluxgroup.ch",
-    period: "06/2025 - 11/2025",
+    period: "Janv 2025 - Nov 2025",
     role: "UI/UX Designer",
     description:
       "A platform offering IT consulting, web development, telecommunications services, and renewable energy solutions.",
@@ -41,8 +41,8 @@ const EXPERIENCES = [
     company: "World Psychiatry Association",
     type: "Tech Start-up",
     url: "wpanet.org",
-    period: "06/2024 - 12/2024",
-    role: "UI/UX Designer",
+    period: "Janv 2024 - Sept 2024",
+    role: "UI/UX Designer & Front-end Developer",
     description:
       "The World Psychiatric Association (WPA) is a global, nongovernmental organization (NGO) representing psychiatric societies in 123 countries. It promotes international collaboration, sets ethical standards, and works with the World Health Organization (WHO) to improve mental health care, education, and research.",
   },

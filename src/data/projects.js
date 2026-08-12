@@ -36,7 +36,7 @@ export const PROJECTS = [
   {
     id: 3,
     title: "Hype Software POS",
-    url: "hype-software.com",
+    url: "hype.swiss",
     tags: ["Finance", "6 Pages", "Dark Theme"],
     description:
       "A POS (Point of Sale) application is a software system that enables businesses to manage sales, process payments, and track transactions in real time.",
@@ -80,7 +80,7 @@ export const PROJECTS = [
   {
     id: 7,
     title: "Flux",
-    url: "flugroup.ch",
+    url: "fluxroup.ch",
     tags: ["Platform", "4 Pages", "Light Theme"],
     description:
       "A platform offering IT consulting, web development, telecommunications services, and renewable energy solutions.",
