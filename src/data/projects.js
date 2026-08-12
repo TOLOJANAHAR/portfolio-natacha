@@ -80,7 +80,7 @@ export const PROJECTS = [
   {
     id: 7,
     title: "Flux",
-    url: "fluxroup.ch",
+    url: "fluxgroup.ch",
     tags: ["Platform", "4 Pages", "Light Theme"],
     description:
       "A platform offering IT consulting, web development, telecommunications services, and renewable energy solutions.",
